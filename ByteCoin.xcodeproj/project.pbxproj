@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E06559B2727594300E5BD67 /* 57735-crypto-coins.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E06559A2727594300E5BD67 /* 57735-crypto-coins.json */; };
 		8E9033D127261D70000E7854 /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9033D027261D70000E7854 /* CoinData.swift */; };
 		8E9033D327262CFE000E7854 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9033D227262CFE000E7854 /* CoinModel.swift */; };
 		ADA8AC092329367100626376 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA8AC082329367100626376 /* AppDelegate.swift */; };
@@ -23,6 +24,7 @@
 		0FFFBE9BC3D84D752ACF2223 /* Pods-ByteCoin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ByteCoin.release.xcconfig"; path = "Target Support Files/Pods-ByteCoin/Pods-ByteCoin.release.xcconfig"; sourceTree = "<group>"; };
 		3871A9714446D69DCEE359E2 /* Pods-ByteCoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ByteCoin.debug.xcconfig"; path = "Target Support Files/Pods-ByteCoin/Pods-ByteCoin.debug.xcconfig"; sourceTree = "<group>"; };
 		657213D61276313EE3829D31 /* Pods_ByteCoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ByteCoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E06559A2727594300E5BD67 /* 57735-crypto-coins.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "57735-crypto-coins.json"; sourceTree = "<group>"; };
 		8E9033D027261D70000E7854 /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
 		8E9033D227262CFE000E7854 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 		ADA8AC052329367100626376 /* ByteCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ByteCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -59,6 +61,7 @@
 		ADA8ABFC2329367100626376 = {
 			isa = PBXGroup;
 			children = (
+				8E06559A2727594300E5BD67 /* 57735-crypto-coins.json */,
 				ADA8AC072329367100626376 /* ByteCoin */,
 				ADA8AC062329367100626376 /* Products */,
 				F9F19743D2ED6C6A787E1C27 /* Pods */,
@@ -121,7 +124,6 @@
 				3871A9714446D69DCEE359E2 /* Pods-ByteCoin.debug.xcconfig */,
 				0FFFBE9BC3D84D752ACF2223 /* Pods-ByteCoin.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -186,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADA8AC152329367300626376 /* LaunchScreen.storyboard in Resources */,
+				8E06559B2727594300E5BD67 /* 57735-crypto-coins.json in Resources */,
 				ADA8AC122329367300626376 /* Assets.xcassets in Resources */,
 				ADA8AC102329367100626376 /* Main.storyboard in Resources */,
 			);
