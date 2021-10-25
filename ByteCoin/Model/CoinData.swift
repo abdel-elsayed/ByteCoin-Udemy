@@ -9,14 +9,12 @@
 import Foundation
 
 struct CoinData: Codable {
-    let time: String
-    let asset_id_base: String // BTC
-    let asset_id_quote: String // USD
-    let rate: Float
-    let src_side_base: [src_side_base]
+    let asset_id_base: String // USD
+    let rates: [rates]
 }
 
-struct src_side_base: Codable{
-    let asset: String
+struct rates: Codable {
+    let time: String
+    let asset_id_quote: String
     let rate: Float
 }

@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Coin View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ByteCoin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CoinViewController" customModule="ByteCoin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5TP-yw-RBT">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -179,7 +179,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CjI-yV-vnC"/>
-                        <color key="backgroundColor" name="Background Color"/>
+                        <color key="backgroundColor" red="0.71359445603387761" green="0.71943602899108272" blue="0.36361685539976724" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="ct2-jk-pgH" firstAttribute="trailing" secondItem="CjI-yV-vnC" secondAttribute="trailing" id="0NU-ng-zoE"/>
                             <constraint firstItem="WWW-oe-lHd" firstAttribute="top" secondItem="CjI-yV-vnC" secondAttribute="top" constant="10" id="6gh-lx-Pg8"/>
@@ -190,9 +190,13 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="bitcoinLabel" destination="N2a-Ax-iRV" id="XfZ-qj-2NP"/>
-                        <outlet property="currencyLabel" destination="MAn-y0-nXv" id="V5h-e0-gZK"/>
+                        <outlet property="ETHLabel" destination="xY4-mC-w98" id="uOc-hQ-BR7"/>
+                        <outlet property="LTCLabel" destination="N2a-Ax-iRV" id="Ycd-NO-MrQ"/>
+                        <outlet property="bitcoinLabel" destination="d98-XN-6xp" id="bwC-hJ-hqO"/>
                         <outlet property="currencyPicker" destination="ct2-jk-pgH" id="kVl-7V-p4h"/>
+                        <outletCollection property="coinCurr" destination="MAn-y0-nXv" collectionClass="NSMutableArray" id="JaW-0z-gzg"/>
+                        <outletCollection property="coinCurr" destination="2Kd-Xc-5gq" collectionClass="NSMutableArray" id="Mlh-tp-jYZ"/>
+                        <outletCollection property="coinCurr" destination="fhY-az-OKy" collectionClass="NSMutableArray" id="RcL-tm-1vY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -204,9 +208,6 @@
         <image name="icons8-bitcoin" width="166.66667175292969" height="166.66667175292969"/>
         <image name="icons8-ethereum" width="166.66667175292969" height="166.66667175292969"/>
         <image name="icons8-litecoin" width="166.66667175292969" height="166.66667175292969"/>
-        <namedColor name="Background Color">
-            <color red="0.50599998235702515" green="0.92500001192092896" blue="0.92500001192092896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="Icon Color">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

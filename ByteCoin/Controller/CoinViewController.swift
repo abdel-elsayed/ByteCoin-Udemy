@@ -8,35 +8,63 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class CoinViewController: UIViewController {
     
     @IBOutlet weak var bitcoinLabel: UILabel!
-    @IBOutlet weak var currencyLabel: UILabel!
+    @IBOutlet weak var ETHLabel: UILabel!
+    @IBOutlet weak var LTCLabel: UILabel!
+    
+    @IBOutlet var coinCurr: [UILabel]!
+    
+    
     @IBOutlet weak var currencyPicker: UIPickerView!
-    let coinManager = CoinManager()
+    var coinManager = CoinManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
         currencyPicker.delegate = self
         currencyPicker.dataSource = self
+        coinManager.delegate = self
     }
+}
 
+//MARK: - UIPickerViewDataSource Header
+extension CoinViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return coinManager.currencyArray.count
-        
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return coinManager.currencyArray[row]
     }
+    
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        currencyLabel.text = coinManager.currencyArray[row]
+        
+        for label in coinCurr {
+            label.text = coinManager.currencyArray[row]
+        }
         coinManager.getCoinPrice(for: coinManager.currencyArray[row])
     }
 }
 
+//MARK: - CoinManagerDelegate Header
+extension CoinViewController: CoinManagerDelegate {
+    
+    func didCoinPriceChange(CoinModel: CoinModel) {
+        DispatchQueue.main.async {
+            self.bitcoinLabel.text = String(format: "%.3f", CoinModel.BTCrate)
+            self.ETHLabel.text = String(format: "%.3f", CoinModel.ETHrate)
+            self.LTCLabel.text = String(format: "%.3f", CoinModel.LTCrate)
+        }
+    }
+    
+    func didFailWithError(error: Error) {
+        print(error)
+    }
+    
+}
