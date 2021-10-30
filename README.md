@@ -15,7 +15,7 @@
   </p>
 </p>
 
-<p align="row">
+<p align="center">
 <img src= "https://github.com/abdel-elsayed/Udemy-iOS-ByteCoin/blob/master/Screen%20Recording%202021-10-30%20at%209.19.39%20AM.gif" width="300" >
 </p>
 
