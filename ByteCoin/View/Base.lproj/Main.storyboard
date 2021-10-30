@@ -18,12 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ct2-jk-pgH">
-                                <rect key="frame" x="0.0" y="562" width="375" height="216"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="216" id="S7z-Rh-fJa"/>
-                                </constraints>
-                            </pickerView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="WWW-oe-lHd">
                                 <rect key="frame" x="0.0" y="54" width="375" height="375"/>
                                 <subviews>
@@ -184,9 +178,15 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="57735-crypto-coins"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ct2-jk-pgH">
+                                <rect key="frame" x="0.0" y="521" width="375" height="216"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="S7z-Rh-fJa"/>
+                                </constraints>
+                            </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="CjI-yV-vnC"/>
-                        <color key="backgroundColor" red="0.71359445603387761" green="0.71943602899108272" blue="0.36361685539976724" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
                         <constraints>
                             <constraint firstItem="ct2-jk-pgH" firstAttribute="trailing" secondItem="CjI-yV-vnC" secondAttribute="trailing" id="0NU-ng-zoE"/>
                             <constraint firstItem="WWW-oe-lHd" firstAttribute="top" secondItem="CjI-yV-vnC" secondAttribute="top" constant="10" id="6gh-lx-Pg8"/>
@@ -194,10 +194,10 @@
                             <constraint firstItem="WWW-oe-lHd" firstAttribute="leading" secondItem="CjI-yV-vnC" secondAttribute="leading" id="DHX-HO-65x"/>
                             <constraint firstItem="CjI-yV-vnC" firstAttribute="trailing" secondItem="P6b-dT-jd9" secondAttribute="trailing" constant="10" id="E1o-uV-Z28"/>
                             <constraint firstItem="P6b-dT-jd9" firstAttribute="top" secondItem="WWW-oe-lHd" secondAttribute="bottom" constant="25" id="Hmk-MY-3Qt"/>
-                            <constraint firstItem="ct2-jk-pgH" firstAttribute="top" secondItem="P6b-dT-jd9" secondAttribute="bottom" constant="10" id="L28-dO-Tnc"/>
+                            <constraint firstItem="ct2-jk-pgH" firstAttribute="top" secondItem="P6b-dT-jd9" secondAttribute="bottom" constant="-31" id="L28-dO-Tnc"/>
                             <constraint firstItem="CjI-yV-vnC" firstAttribute="trailing" secondItem="WWW-oe-lHd" secondAttribute="trailing" id="OZU-yE-hqJ"/>
                             <constraint firstItem="ct2-jk-pgH" firstAttribute="leading" secondItem="CjI-yV-vnC" secondAttribute="leading" id="myB-1G-FSo"/>
-                            <constraint firstItem="ct2-jk-pgH" firstAttribute="bottom" secondItem="CjI-yV-vnC" secondAttribute="bottom" id="tCZ-GN-qxe"/>
+                            <constraint firstItem="ct2-jk-pgH" firstAttribute="bottom" secondItem="CjI-yV-vnC" secondAttribute="bottom" constant="-41" id="tCZ-GN-qxe"/>
                         </constraints>
                     </view>
                     <connections>
@@ -229,6 +229,9 @@
         <namedColor name="Title Color">
             <color red="0.18799999356269836" green="0.20800000429153442" blue="0.28600001335144043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="tertiaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
